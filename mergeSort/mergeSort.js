@@ -1,10 +1,8 @@
 const mergeSort = (arr) => {
-  // Base case check that the array length is more than 1
   if (arr.length < 2) {
     return arr;
   }
 
-  // Get the index of the item at the center, if odd or if even, index  b4 midpoint
   const midIndex = Math.floor(arr.length / 2);
 
   const leftArr = arr.slice(0, midIndex);
